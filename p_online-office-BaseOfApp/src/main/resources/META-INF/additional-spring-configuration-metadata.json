@@ -1,0 +1,48 @@
+{
+  "properties": [
+    {
+      "name": "google.client.client-id",
+      "type": "java.lang.String",
+      "description": "Description for google.client.client-id."
+    },
+    {
+      "name": "google.client.client-secret",
+      "type": "java.lang.String",
+      "description": "Description for google.client.client-secret."
+    },
+    {
+      "name": "google.client.access-token-uri",
+      "type": "java.lang.String",
+      "description": "Description for google.client.access-token-uri."
+    },
+    {
+      "name": "google.client.user-authorization-uri",
+      "type": "java.lang.String",
+      "description": "Description for google.client.user-authorization-uri."
+    },
+    {
+      "name": "google.client.client-authentication-scheme",
+      "type": "java.lang.String",
+      "description": "Description for google.client.client-authentication-scheme."
+    },
+    {
+      "name": "google.client.scope",
+      "type": "java.lang.String",
+      "description": "Description for google.client.scope."
+    },
+    {
+      "name": "google.resource.user-info-uri",
+      "type": "java.lang.String",
+      "description": "Description for google.resource.user-info-uri."
+    },
+    {
+      "name": "google.resource.prefer-token-info",
+      "type": "java.lang.String",
+      "description": "Description for google.resource.prefer-token-info."
+    },
+    {
+      "name": "google.client.redirectUri",
+      "type": "java.lang.String",
+      "description": "Description for google.client.redirectUri."
+    }
+  ] }

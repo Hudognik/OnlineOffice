@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+</head>
+<body>
+<form th:action="@{/calendar}" method="POST">
+    <select name="calendar">
+        <option th:each="calendar : ${calendars}" th:value="${calendar.id}" th:text="${calendar.summary}"></option>
+    </select><br>
+    <input type="text" value="summary" name="summary"><br>
+    <input type="description" name="description"><br>
+    <input type="date" value="start Date" name="startDate"><br>
+    <input type="time" name="startTime"><br>
+    <input type="date" value="end Date" name="endDate"><br>
+    <input type="time" name="endTime"><br>
+    <input type="submit" value="create Event">
+</form>
+<h3>Get Events From Current Calendar</h3>
+<ul>
+    <li th:each="calendar : ${calendars}" th:style="'background-color: ' + ${calendar.backgroundColor}">
+        <a th:href="@{/login/google/{calendar}(calendar=${calendar.id})}" th:text="${calendar.summary}"></a>
+    </li>
+</ul>
+
+</body>
+</html>

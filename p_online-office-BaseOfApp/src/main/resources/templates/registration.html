@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Registration</title>
+</head>
+<body>
+<div class="container">
+    <form class="form-signin" action="#" th:action="@{/registration}" th:object="${user}" method="POST">
+        <h2 class="form-signin-heading">Registration</h2>
+        <hr>
+        <p>Fill the form to register new user.</p>
+        <p>
+            <label class="sr-only" for="NewUserUsername">Username</label>
+            <input class="form-control" type="text" name="username" id="NewUserUsername"
+                   placeholder="Username" th:field="*{username}" th:required="required">
+        </p>
+        <p>
+            <label class="sr-only" for="NewUserPassword">Password</label>
+            <input class="form-control" type="password" name="password" id="NewUserPassword"
+                   placeholder="Password" th:field="*{password}" th:required="required">
+        </p>
+        <button class="btn btn-primary" type="submit">Sing Up</button>
+    </form>
+</div>
+</body>
+</html>
